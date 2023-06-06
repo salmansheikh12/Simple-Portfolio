@@ -1,0 +1,45 @@
+:root {
+    --dark-gray: #333333;
+  }
+
+body{
+    background: var(--dark-gray);
+}
+
+header {
+    display: inline-block;
+
+}
+
+.logo{
+    color: white;
+    overflow-x: hidden;
+    display: inline;
+
+}
+
+nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline;
+}
+
+nav li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+
+.hero h1{
+    color: white;
+
+}
+
+.hero h1 span{
+    color: red;
+
+}
