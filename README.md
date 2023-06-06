@@ -1,2 +1,2 @@
 # Simple-Portfolio
-Simple portfolio made with css, html, and JS.
+Simple portfolio made with CSS, HMTL, and JS.
