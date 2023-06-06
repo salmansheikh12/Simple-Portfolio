@@ -1,49 +1,74 @@
 :root {
-    --dark-gray: #333333;
+    --dark-gray: #181a1b;
 }
 
 body {
     background: var(--dark-gray);
+    margin: 0;
 }
 
-.hero section {
+header{
     width: 100%;
-    /* margin: 0;
-    padding: 0; */
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    height: 50px;
+
 }
 
 /* NAVBAR */
 .logo {
+    height: 100%;
+    width: auto;
     color: white;
-    overflow-x: hidden;
-    display: inline;
+    /* overflow-x: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
-
-
-
+    /* background-color: red; */
+    padding: 0px 10px 0px 10px;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 350px;
-    align-items: center;
+    /* align-items: center; */
+    /* background-color: blue; */
+    
 }
 
-nav div {
-    padding: 0;
-    margin: 0;
-    display: flex;
-
-}
-
-nav li {
+nav ul li {
     display: inline;
     list-style: none;
+    float: left;
+
 }
 
 nav li a {
-    padding: 10px;
+    
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: #03ffe6;
+    font-size: 20px;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: rgb(5, 64, 142); */
+}
+
+.socials li{
+    display: inline;
+    list-style: none;
+
+
+}
+
+.socials li a{
+    padding: 0px 10px 0px 10px;
     text-decoration: none;
     color: #03ffe6;
     font-size: 20px;
@@ -53,10 +78,14 @@ nav li a {
 .hero {
     display: flex;
     justify-content: center;
+
 }
 
 .hero h1 {
     color: white;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
 
 }
 
@@ -66,7 +95,7 @@ nav li a {
 }
 
 .hero p {
-
+    /* text-align: center; */
     color: aliceblue;
 }
 
