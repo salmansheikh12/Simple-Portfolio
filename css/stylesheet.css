@@ -1,45 +1,78 @@
 :root {
     --dark-gray: #333333;
-  }
+}
 
-body{
+body {
     background: var(--dark-gray);
 }
 
-header {
-    display: inline-block;
-
+.hero section {
+    width: 100%;
+    /* margin: 0;
+    padding: 0; */
 }
 
-.logo{
+/* NAVBAR */
+.logo {
     color: white;
     overflow-x: hidden;
     display: inline;
+    font-size: 25px;
+
+
 
 }
 
-nav{
-    list-style: none;
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    align-items: center;
+}
+
+nav div {
     padding: 0;
     margin: 0;
+    display: flex;
+
 }
 
-nav li{
+nav li {
     display: inline;
+    list-style: none;
 }
 
 nav li a {
     padding: 10px;
     text-decoration: none;
-    color: #000;
-  }
+    color: #03ffe6;
+    font-size: 20px;
+}
 
-.hero h1{
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero h1 {
     color: white;
 
 }
 
-.hero h1 span{
-    color: red;
+.hero h1 span {
+    color: #03ffe6;
+
+}
+
+.hero p {
+
+    color: aliceblue;
+}
+
+.hero,
+.projects,
+.skills {
+    background: #003856;
 
 }
