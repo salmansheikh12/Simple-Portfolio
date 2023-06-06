@@ -74,8 +74,8 @@ nav {
 
 }
 
-.logo h3{
-    
+.github{
+    width: 15%;
 }
 
 nav .links {
@@ -121,8 +121,6 @@ nav li a {
 
 }
 
-.socials ul li .link {}
-
 /* HERO SECTION */
 
 header .hero {
@@ -130,21 +128,21 @@ header .hero {
     position: absolute;
     width: 100%;
     top: 50%;
-
     display: flex;
     justify-content: center;
+    color: white;
 
 }
 
 header .hero h1 {
-    font-size: 2.8rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
     /* background-color: #002333; */
 }
 
 header .hero .mini-sentence {
-    font-size: 0.7rem;
+    font-size: 2.3rem;
     display: flex;
     justify-content: center;
     /* background-color: #002333; */
