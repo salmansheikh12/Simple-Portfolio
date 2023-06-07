@@ -40,8 +40,6 @@ header {
 
 /* NAVBAR */
 nav {
-
-    /* background-color: rgb(104, 7, 7); */
     width: 100%;
     position: fixed;
     /* display: -webkit-box;
@@ -53,8 +51,8 @@ nav {
     /* -ms-flex-align: center; */
     align-items: center;
     min-height: 6vh;
-    -webkit-animation: nav-links 0.5s;
-    animation: nav-links 0.5s;
+    /* -webkit-animation: nav-links 0.5s;
+    animation: nav-links 0.5s; */
     font-size: 1.4rem;
 
 
@@ -64,7 +62,6 @@ nav {
     height: 100%;
     width: auto;
     color: white;
-    /* overflow-x: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,100 +72,265 @@ nav {
 
 }
 
-.github{
+.github {
     width: 30px;
     height: auto;
 }
 
-nav .links {
-    align-items: center;
-
-}
+/* nav .center-links ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+} */
 
 nav ul li {
     display: inline;
     list-style: none;
     float: left;
-
-
 }
 
 nav li a {
-
     padding: 0px 10px 0px 10px;
     text-decoration: none;
     color: white;
     font-size: 1.3rem;
 }
 
+/* .toggler ul{
+
+
+    
+
+
+} */
+
+.switch {
+
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
 
 
 /* HERO SECTION */
-
-header .hero-text{
+/* Styles for desktop/laptop screens */
+header .hero-text {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    display: flex;
-
 
 }
 
 header .hero-text h1 {
     font-size: 5rem;
-
 }
 
 header .hero-text .mini-sentence {
     font-size: 2.3rem;
 }
 
-header .hero-text ul{
+header .hero-text ul {
     list-style-type: none;
     padding: 10px;
-
-
-
-}
-
-nav .hero-text ul li {
-    display: inline;
-    list-style: none;
-
-
+    display: flex;
 
 }
 
-/* header .hero {
-    z-index: 5;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
+header .hero-text ul li {
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
     color: white;
-    padding: 10px 10px 10px 10px; 
-    
+    font-size: 1.3rem;
 
-    
 
 }
 
-header .hero h1 {
-    font-size: 5rem;
+header .social ul {
+    justify-content: center;
+    text-align: center;
 
 }
 
-header .hero .mini-sentence {
-    font-size: 2.3rem;
+.linkedin {
+    width: 37px;
+    height: auto;
+
 }
 
-header .hero ul li{
-    padding: 10px;
-    display: inline;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+/* ABOUT */
+.about {
+
+    color: white;
+    background-color: #00244465;
+
+
+}
+
+.about .about-me {
+
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 5rem;
+    width: 66%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.about .about-me .img-me {
+
+    padding-right: 5rem;
     align-items: center;
-}  */
+    display: flex;
+
+
+
+}
+
+.about .about-me .about-text {
+
+    width: 60%;
+    
+
+
+}
+
+.about .about-me .about-text h1 {
+
+    padding-bottom: 1rem;
+    letter-spacing: 2px;
+    font-size: 3rem;
+
+}
+
+@media (max-width: 1500px) {
+    /* Add your desktop-specific styles here */
+
+
+
+    .about .about-me{
+        display: block;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        width: 80%;
+        margin: 0 auto;
+
+
+    }
+
+
+    .about .about-text{
+        padding-top: 2rem;
+    }
+
+    .about .img-me{
+        align-content: center;
+    }
+
+
+
+    
+
+
+  }
+
+/* SKILLS */
+.skills {
+
+    width: 60%;
+    padding: 5rem;
+    margin: 0 auto;
+    /* display: flex; */
+    /* justify-content: space-between; */
+
+}
+
+.skills .header {
+
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    padding: 5rem 0rem;
+
+
+}
+
+.skills-set {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 15px;
+    
+
+}
+
+.skills .languages {
+    background-color: #002333;
+
+    /* height: 22rem; */
+    /* width: 18rem; */
+    padding: 1rem;
+    margin: 1.5rem;
+    text-align: center;
+
+    width: 80%;
+
+    /* -webkit-transition: 0.5s ease;
+    transition: 0.5s ease; */
+
+
+
+}
