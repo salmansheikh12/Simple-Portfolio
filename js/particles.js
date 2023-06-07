@@ -81,8 +81,8 @@ var pJS = function(tag_id, params){
         bounce: false,
         attract: {
           enable: false,
-          rotateX: 3000,
-          rotateY: 3000
+          rotateX: 1000,
+          rotateY: 1000
         }
       },
       array: []
@@ -108,16 +108,16 @@ var pJS = function(tag_id, params){
           }
         },
         bubble:{
-          distance: 200,
-          size: 80,
-          duration: 0.4
+          distance: 100,
+          size: 10,
+          duration: 0.3
         },
         repulse:{
-          distance: 200,
-          duration: 0.4
+          distance: 100,
+          duration: 0.3
         },
         push:{
-          particles_nb: 4
+          particles_nb: 2
         },
         remove:{
           particles_nb: 2
