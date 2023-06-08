@@ -5,7 +5,6 @@
 
 body {
     background: var(--dark-gray);
-    /* margin: 0; */
 }
 
 * {
@@ -13,11 +12,9 @@ body {
 }
 
 header {
-
     width: 100%;
     display: flex;
     justify-content: center;
-    /* min-height: 40px; */
     height: 100vh;
     background: var(--dark-gray);
     position: relative;
@@ -25,8 +22,6 @@ header {
 }
 
 #particles-js {
-
-
     width: 100%;
     height: 100%;
     /* background-color: #b61924; */
@@ -34,19 +29,27 @@ header {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat; */
+}
 
+span {
+    display: inline-block;
+    margin-left: 5px;
 }
 
 
 /* NAVBAR */
 nav {
+
+    z-index: 1;
+    background-color: #002333;
     width: 100%;
     position: fixed;
+    /* align-content: center; */
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    /* -ms-flex-pack: distribute; */
+    /* justify-content: space-between; */
     /* -webkit-box-align: center; */
     /* -ms-flex-align: center; */
     align-items: center;
@@ -54,9 +57,12 @@ nav {
     /* -webkit-animation: nav-links 0.5s;
     animation: nav-links 0.5s; */
     font-size: 1.4rem;
+    justify-content: center;
 
 
 }
+
+
 
 .logo {
     height: 100%;
@@ -68,20 +74,42 @@ nav {
     font-size: 1.17em;
     font-weight: bold;
     /* background-color: red; */
-    padding: 0px 10px 0px 10px;
-
+    padding: 10px
 }
 
+
 .github {
-    width: 30px;
+    width: 33px;
     height: auto;
 }
 
-/* nav .center-links ul {
+.toggler {
+    padding-inline-start: 0%;
+    /* background-color: yellow; */
+
+
+}
+
+nav .center-links {
+
+    letter-spacing: 2px;
+    padding-top: .90%;
+    padding-bottom: .90%;
     display: flex;
-    justify-content: center;
-    text-align: center;
-} */
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    /* background-color: violet; */
+
+
+}
+
+
+nav .center-links .links {
+    padding-inline-start: 0%;
+}
 
 nav ul li {
     display: inline;
@@ -95,14 +123,6 @@ nav li a {
     color: white;
     font-size: 1.3rem;
 }
-
-/* .toggler ul{
-
-
-    
-
-
-} */
 
 .switch {
 
@@ -203,7 +223,7 @@ header .social ul {
 }
 
 .linkedin {
-    width: 37px;
+    width: 40px;
     height: auto;
 
 }
@@ -243,7 +263,7 @@ header .social ul {
 .about .about-me .about-text {
 
     width: 60%;
-    
+
 
 
 }
@@ -257,11 +277,8 @@ header .social ul {
 }
 
 @media (max-width: 1500px) {
-    /* Add your desktop-specific styles here */
 
-
-
-    .about .about-me{
+    .about .about-me {
         display: block;
         font-size: 1.3rem;
         letter-spacing: 2px;
@@ -271,66 +288,72 @@ header .social ul {
 
     }
 
-
-    .about .about-text{
+    .about .about-text {
         padding-top: 2rem;
     }
 
-    .about .img-me{
+    .about .img-me {
         align-content: center;
     }
 
-
-
-    
-
-
-  }
+}
 
 /* SKILLS */
 .skills {
 
-    width: 60%;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.skills .skill-content {
+
+    font-size: 1.3rem;
     padding: 5rem;
+    width: 66%;
     margin: 0 auto;
-    /* display: flex; */
+    display: block;
     /* justify-content: space-between; */
+
 
 }
 
-.skills .header {
-
-    color: white;
+.skills .skill-content h1 {
+    padding-bottom: 1rem;
     font-size: 3rem;
-    letter-spacing: 2px;
-    padding: 5rem 0rem;
 
 
 }
 
 .skills-set {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     color: white;
     padding-top: 15px;
-    
 
 }
 
 .skills .languages {
     background-color: #002333;
-
-    /* height: 22rem; */
-    /* width: 18rem; */
-    padding: 1rem;
-    margin: 1.5rem;
     text-align: center;
-
     width: 80%;
+    margin: 1.5rem;
 
-    /* -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; */
+}
+
+.skills .languages h3{
+    padding: 1rem;
+}
+
+/* PROJECTS */
+.projects {
+
+    background-color: #00244465;
 
 
+}
+
+.gmail-icon {
+    width: 40px;
+    height: auto;
 
 }
