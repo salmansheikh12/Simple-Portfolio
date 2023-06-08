@@ -24,6 +24,7 @@ header {
 #particles-js {
     width: 100%;
     height: 100%;
+    /* z-index: 4; */
     /* background-color: #b61924; */
     /* background-image: url('');
     background-size: cover;
@@ -287,6 +288,7 @@ header .social ul {
 
 /* SKILLS */
 .skills {
+    
 
     
     letter-spacing: 2px;
