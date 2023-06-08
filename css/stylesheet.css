@@ -41,7 +41,7 @@ span {
 nav {
 
     z-index: 1;
-    background-color: #002333;
+    /* background-color: #002333; */
     width: 100%;
     position: fixed;
     /* align-content: center; */
@@ -65,6 +65,8 @@ nav {
 
 
 .logo {
+    /* z-index: 2; */
+    /* position: fixed; */
     height: 100%;
     width: auto;
     color: white;
@@ -75,6 +77,7 @@ nav {
     font-weight: bold;
     /* background-color: red; */
     padding: 10px
+
 }
 
 
@@ -294,12 +297,29 @@ header .social ul {
 
     }
 
+    .about .about-me .img-me {
+        margin: 0 auto;
+        
+        width: fit-content;    
+    }
+
     .about .about-text {
+        margin: 0 auto;
         padding-top: 2rem;
     }
 
     .about .img-me {
         align-content: center;
+    }
+
+    .about .about-me .about-text h1{
+
+        text-align: center;
+    }
+
+    .about .about-me .about-text p{
+
+        text-align: center;
     }
 
 }
