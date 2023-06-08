@@ -290,7 +290,7 @@ header .social ul {
 /* SKILLS */
 .skills {
 
-    color: white;
+    
     letter-spacing: 2px;
 }
 
@@ -302,6 +302,7 @@ header .social ul {
     margin: 0 auto;
     display: block;
     justify-content: space-between;
+    color: white;
 
 
 }
@@ -341,21 +342,9 @@ header .social ul {
 
 }
 
-.skills .skills-set .languages p {
-    list-style: none;
-    text-align: center;
-    padding-bottom: 10px;
-
-}
-
-.skills .languages h3 {
-    padding: 1rem;
-}
-
-.skills .frameworks {
-
+/* .skills .skills-set .cards {
     background-color: #002333;
-    /* text-align: center; */
+
 
     margin: 1.5rem;
 
@@ -369,38 +358,87 @@ header .social ul {
     transition: 0.5s ease;
 
 
+
+
 }
 
-.skills .frameworks p {
+.skills .skills-set .cards p {
+    list-style: none;
+    text-align: center;
     padding-bottom: 10px;
+
 }
 
-.skills .skill-content .skills-set .frameworks h3 {
+
+
+
+.skills .cards h3 {
+    padding: 1rem;
+}
+
+
+
+.skills .skill-content .skills-set .cards .frameworks {
     margin-bottom: 10px;
     font-size: 16px;
     padding-top: 1rem;
     /* font-weight:bolder; */
 
-}
+} */
+
+
+/* .skills .cards .frameworks {
+
+    background-color: #002333;
+    
+
+    margin: 1.5rem;
+
+
+    height: 22rem;
+    min-width: 18rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    text-align: center;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+
+} */
+
+/* .skills .cards .frameworks p {
+    padding-bottom: 10px;
+} */
+
+/* .skills .skills-set .languages p {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 10px;
+
+} */
+
+/* .skills .languages h3 {
+    padding: 1rem;
+} */
 
 /* PROJECTS */
 .projects {
 
     background-color: #00244465;
-    color: white;
+   
     letter-spacing: 2px;
 
 
 }
 
-.projects .proj-contents {
+.projects .proj-content {
 
-    font-size: 1.3rem;
     padding: 5rem;
     width: 66%;
     margin: 0 auto;
-    display: block;
-
+    display: inline-block;
+    justify-content: space-between;
+    color: white;
 
 
 
@@ -408,14 +446,59 @@ header .social ul {
 
 }
 
-.projects .proj-contents h1 {
+.projects .proj-content h1 {
 
-    text-align: left;
+  
     padding-bottom: 1rem;
     font-size: 3rem;
 
 
 
+
+}
+
+/* CARDS */
+.cards {
+    background-color: #002333;
+
+
+    margin: 1.5rem;
+
+
+    height: 22rem;
+    min-width: 18rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    text-align: center;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+
+
+
+}
+
+.cards p {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+
+
+
+.cards h3 {
+    padding: 1rem;
+}
+
+
+
+.cards .frameworks {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding-top: 1rem;
+    /* font-weight:bolder; */
 
 }
 
