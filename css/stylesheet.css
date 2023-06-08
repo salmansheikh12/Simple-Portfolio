@@ -183,9 +183,7 @@ input:checked+.slider:before {
 
 
 /* HERO SECTION */
-/* Styles for desktop/laptop screens */
 header .hero-text {
-    /* text-align: center; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -342,84 +340,7 @@ header .social ul {
 
 }
 
-/* .skills .skills-set .cards {
-    background-color: #002333;
 
-
-    margin: 1.5rem;
-
-
-    height: 22rem;
-    min-width: 18rem;
-    padding: 1rem;
-    margin: 1.5rem;
-    text-align: center;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-
-
-
-
-}
-
-.skills .skills-set .cards p {
-    list-style: none;
-    text-align: center;
-    padding-bottom: 10px;
-
-}
-
-
-
-
-.skills .cards h3 {
-    padding: 1rem;
-}
-
-
-
-.skills .skill-content .skills-set .cards .frameworks {
-    margin-bottom: 10px;
-    font-size: 16px;
-    padding-top: 1rem;
-    /* font-weight:bolder; */
-
-} */
-
-
-/* .skills .cards .frameworks {
-
-    background-color: #002333;
-    
-
-    margin: 1.5rem;
-
-
-    height: 22rem;
-    min-width: 18rem;
-    padding: 1rem;
-    margin: 1.5rem;
-    text-align: center;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-
-
-} */
-
-/* .skills .cards .frameworks p {
-    padding-bottom: 10px;
-} */
-
-/* .skills .skills-set .languages p {
-    list-style: none;
-    text-align: center;
-    padding-bottom: 10px;
-
-} */
-
-/* .skills .languages h3 {
-    padding: 1rem;
-} */
 
 /* PROJECTS */
 .projects {
@@ -436,7 +357,7 @@ header .social ul {
     padding: 5rem;
     width: 66%;
     margin: 0 auto;
-    display: inline-block;
+    display: block;
     justify-content: space-between;
     color: white;
 
@@ -456,6 +377,33 @@ header .social ul {
 
 
 }
+
+
+.projects .proj-set {
+    display: flex;
+
+    /* float: left; */
+    justify-content: space-between;
+    color: white;
+    padding-top: 15px;
+
+}
+/* .proj-cards{
+    background-color: #181a1b;
+
+
+
+    margin: 1.5rem;
+
+
+    height: 22rem;
+    min-width: 18rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    text-align: center;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+} */
 
 /* CARDS */
 .cards {
