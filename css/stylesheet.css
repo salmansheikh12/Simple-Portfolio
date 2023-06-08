@@ -228,6 +228,12 @@ header .social ul {
 
 }
 
+.gmail-icon {
+    width: 40px;
+    height: auto;
+
+}
+
 /* ABOUT */
 .about {
 
@@ -269,7 +275,7 @@ header .social ul {
 }
 
 .about .about-me .about-text h1 {
-
+    text-align: right;
     padding-bottom: 1rem;
     letter-spacing: 2px;
     font-size: 3rem;
@@ -348,12 +354,37 @@ header .social ul {
 .projects {
 
     background-color: #00244465;
+    color: white;
+    letter-spacing: 2px;
 
 
 }
 
-.gmail-icon {
-    width: 40px;
-    height: auto;
+.projects .proj-contents {
+
+    font-size: 1.3rem;
+    padding: 5rem;
+    width: 66%;
+    margin: 0 auto;
+    display: block;
+
+
+
+
+
 
 }
+
+.projects .proj-contents h1 {
+
+    text-align: left;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+
+
+
+
+}
+
+
+
