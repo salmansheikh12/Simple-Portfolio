@@ -288,9 +288,9 @@ header .social ul {
 
 /* SKILLS */
 .skills {
-    
 
-    
+
+
     letter-spacing: 2px;
 }
 
@@ -304,6 +304,8 @@ header .social ul {
     justify-content: space-between;
     color: white;
 
+ 
+
 
 }
 
@@ -312,13 +314,41 @@ header .social ul {
     font-size: 3rem;
 
 
+
 }
 
+
+.skills-set h3 {
+    padding-bottom: 1rem;
+
+
+    font-size: 1.7rem;
+    font-weight: bolder;
+
+}
+
+.skills-set .frameworks {
+    
+
+
+    font-size: .85rem;
+    font-weight: bolder;
+
+    
+
+}
+
+
 .skills .skills-set {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+
     color: white;
     padding-top: 15px;
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 
 }
 
@@ -326,11 +356,11 @@ header .social ul {
     background-color: #002333;
     /* text-align: center; */
 
-    margin: 1.5rem;
 
 
     height: 22rem;
     min-width: 18rem;
+    max-width: 18rem;
     padding: 1rem;
     margin: 1.5rem;
     text-align: center;
@@ -348,7 +378,7 @@ header .social ul {
 .projects {
 
     background-color: #00244465;
-   
+
     letter-spacing: 2px;
 
 
@@ -371,31 +401,31 @@ header .social ul {
 
 .projects .proj-content h1 {
 
-  
+
     padding-bottom: 1rem;
     font-size: 3rem;
-
-
 
 
 }
 
 
 .projects .proj-set {
-    display: flex;
+    /* display: flex; */
 
     /* float: left; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     color: white;
-    padding-top: 15px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 
 }
 
-.proj-cards{
+.proj-cards {
     border-radius: 10px;
 
     background-color: #002333;
-    
+
     border-color: white;
 
     border-style: solid;
@@ -404,30 +434,65 @@ header .social ul {
 
 
 
-    margin: 1.5rem;
-
-
-    height: 22rem;
-    min-width: 18rem;
+    height: 31rem;
+    min-width: 24rem;
+    max-width: 24rem;
     padding: 1rem;
     margin: 1.5rem;
-    text-align: center;
+
+    /* text-align: center;
     -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
+    transition: 0.5s ease; */
+
+
+
+
+
 }
+
+.tools {
+
+    padding-inline-start: 0%;
+    display: flex;
+
+
+
+}
+
+.tools p {
+    font-weight: bolder;
+    padding-top: 10px;
+
+}
+
+.tools li {
+    display: inline;
+    list-style: none;
+    align-content: center;
+
+}
+
+.tools img {
+    height: auto;
+    width: 10%;
+}
+
 
 .proj-cards p {
     list-style: none;
     text-align: center;
     padding-bottom: 10px;
+    font-size: 1.15rem;
+
+
 
 }
 
 
 
-
 .proj-cards h3 {
     padding: 1rem;
+    font-size: 1.7rem;
 }
 
 
@@ -436,7 +501,7 @@ header .social ul {
     margin-bottom: 10px;
     font-size: 16px;
     padding-top: 1rem;
-  
+
 
 }
 
@@ -450,6 +515,7 @@ header .social ul {
 
     height: 22rem;
     min-width: 18rem;
+    max-width: 18rem;
     padding: 1rem;
     margin: 1.5rem;
     text-align: center;
@@ -476,14 +542,14 @@ header .social ul {
 }
 
 
-
+/* 
 .cards .frameworks {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 1.7rem;
     padding-top: 1rem;
-  
 
-}
+
+} */
 
 
 
@@ -664,3 +730,5 @@ header .social ul {
 
         text-align: center;
     }
+
+}
