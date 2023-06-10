@@ -4,7 +4,8 @@
 }
 
 
-html,body{
+html,
+body {
     /* width: 100%;
     height: 100%;
     margin: 0;
@@ -253,22 +254,22 @@ header .hero-text {
     width: 930px;
 
 
-   
-
-  
 
 
 
-   
 
-    
+
+
+
+
+
 
 
 }
 
 header .hero-text h1 {
     font-size: 5rem;
-   
+
 }
 
 header .hero-text .mini-sentence {
@@ -314,6 +315,8 @@ header .social ul {
 
     color: white;
     background-color: #00244465;
+    border: 10px solid red;
+    
 
 
 
@@ -331,6 +334,7 @@ header .social ul {
     align-items: center;
     text-align: center;
     gap: 5rem;
+    border: 10px solid blueviolet;
 
 
 
@@ -352,7 +356,7 @@ header .social ul {
 
     /* width: 60%; */
     border: 10px solid yellow;
-    
+
 
 
 
@@ -378,6 +382,15 @@ header .social ul {
     letter-spacing: 2px;
     display: flex;
     /* letter-spacing: 2px; */
+    border: 10px solid red;
+    
+
+
+
+
+
+
+
 }
 
 .skills .skill-content {
@@ -392,12 +405,13 @@ header .social ul {
 
     color: white;
 
-
+    border: 10px solid blueviolet;
 
 
 }
 
 .skill-content h1 {
+
     text-align: left;
 }
 
@@ -486,6 +500,7 @@ header .social ul {
     background-color: #00244465;
     letter-spacing: 2px;
     display: flex;
+    border: 10px solid red;
 
 }
 
@@ -500,6 +515,8 @@ header .social ul {
     text-align: center;
 
     color: white;
+
+    border: 10px solid blueviolet;
 
 
 }
@@ -539,7 +556,7 @@ header .social ul {
     height: 528px;
     /* min-width: 320px; */
     max-width: 320px;
-    margin: 1rem;
+    /* margin: 1rem; */
 
 
 }
@@ -616,13 +633,15 @@ header .social ul {
 /* media queries */
 
 @media (max-width: 1250px) {
-    html, body {
+
+    html,
+    body {
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
         overflow-x: hidden
-        } 
+    }
 
 
     /* HERO TITLE */
@@ -640,7 +659,7 @@ header .social ul {
         display: block;
         font-size: 1.3rem;
         letter-spacing: 2px;
-        width: 80%;
+        width: 66%;
         margin: 0 auto;
 
 
@@ -675,13 +694,21 @@ header .social ul {
 
 
 @media (max-width: 830px) {
-    html, body {
+
+    html,
+    body {
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
         overflow-x: hidden
-        } 
+    }
+
+
+    /* nav */
+    nav .center-links {
+        display: none;
+    }
 
 
     /* HERO */
@@ -695,12 +722,10 @@ header .social ul {
 
     /* ABOUT */
     .about .about-me {
-        display: block;
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-        width: 80%;
-        margin: 0 auto;
-
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 66%;
+   
 
     }
 
@@ -736,13 +761,14 @@ header .social ul {
 
 @media (max-width: 500px) {
 
-    html, body {
+    html,
+    body {
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
         overflow-x: hidden
-        } 
+    }
 
     /* nav */
     nav .center-links {
@@ -778,16 +804,13 @@ header .social ul {
 
     /* HERO  */
 
-    .hero-text{
+    .hero-text {
 
         text-align: center;
-       
+
     }
 
-    .hero-text h1{
-
-      
-    }
+    .hero-text h1 {}
 
 
     /* ABOUT */
@@ -797,10 +820,10 @@ header .social ul {
         padding: 0rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
-    
-   
-      
-       
+
+
+
+
     }
 
     .about .about-me .about-text h1 {
@@ -815,6 +838,79 @@ header .social ul {
     }
 
     /* Skill cards */
+    .skills .skill-content {
+        padding: 0rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        border: 10px solid blueviolet;
+        place-items: center center;
+
+
+
+
+
+
+    }
+
+    .skills .skills-set {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        border: 10px solid yellow;
+        place-items: center center;
+
+
+
+
+
+}
+
+
+
+.projects .proj-content {
+
+    padding: 0rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 66%;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    border: 10px solid blueviolet;
+    place-items: center center;
+
+    
+
+
+}
+
+.projects .proj-set {
+    /* display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    border: 10px solid yellow;
+    place-items: center center; */
+
+    /* width: fit-content; */
+    /* block-size: fit-content; */
+
+
+
+
+}
+
+
 
 
 }
