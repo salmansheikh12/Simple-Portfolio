@@ -2,12 +2,14 @@
     --dark-gray: #181a1b;
     --dark-blue: #002333;
 }
+
+
 html,body{
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; */
 
 }
 
@@ -23,15 +25,7 @@ body {
 
 }
 
-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background: var(--dark-gray);
-    position: relative;
 
-}
 
 #particles-js {
     width: 100%;
@@ -42,6 +36,7 @@ header {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat; */
+    /* z-index: -2; */
 }
 
 span {
@@ -229,6 +224,19 @@ input:checked+.slider:before {
 
 
 /* HERO SECTION */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: var(--dark-gray);
+    position: relative;
+
+    /* display: grid; */
+    /* place-items: center; */
+
+}
+
 header .hero-text {
     border: 10px solid yellow;
     position: absolute;
@@ -237,10 +245,30 @@ header .hero-text {
     transform: translate(-50%, -50%);
     color: white;
 
+    /* width: 66%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center; */
+    text-align: center;
+    width: 930px;
+
+
+   
+
+  
+
+
+
+   
+
+    
+
+
 }
 
 header .hero-text h1 {
     font-size: 5rem;
+   
 }
 
 header .hero-text .mini-sentence {
@@ -302,6 +330,7 @@ header .social ul {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    gap: 5rem;
 
 
 
@@ -309,7 +338,7 @@ header .social ul {
 
 .about .about-me .img-me {
 
-    padding-right: 5rem;
+    /* padding-right: 5rem; */
     align-items: center;
     display: flex;
 
@@ -747,12 +776,27 @@ header .social ul {
         height: auto;
     }
 
+    /* HERO  */
+
+    .hero-text{
+
+        text-align: center;
+       
+    }
+
+    .hero-text h1{
+
+      
+    }
+
 
     /* ABOUT */
 
     .about .about-me {
         font-size: .9rem;
-
+        padding: 0rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     
    
       
