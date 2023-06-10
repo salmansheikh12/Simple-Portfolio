@@ -345,8 +345,8 @@ header .social ul {
 .skills .skills-set {
     color: white;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    text-align: center
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    justify-content: center;
 
 
 
@@ -376,13 +376,8 @@ header .social ul {
 .projects {
 
     background-color: #00244465;
-
     letter-spacing: 2px;
     display: flex;
-
-
-
-
 
 }
 
@@ -390,13 +385,13 @@ header .social ul {
 
     padding: 5rem;
     width: 66%;
+
     margin: 0 auto;
     display: block;
     justify-content: space-between;
+    text-align: center;
+
     color: white;
-
-
-
 
 
 }
@@ -413,10 +408,31 @@ header .social ul {
 
 
 .projects .proj-set {
-
-    color: white;
+    /* 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px ,1fr));
+    
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    
+    justify-content: center;
+    align-items: center; */
+
+    /* justify-content: center; */
+
+    /* align-items: center; */
+    justify-content: center;
+    display: grid;
+    grid-gap: 20px;
+
+    grid-template-columns:  repeat(auto-fit, minmax(350px, 1fr)) ;
+
+
+        /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) ; */
+    /* grid-template-columns: fit-content(350px) fit-content(350px) fit-content(350px) fit-content(350px) ; */
+
+    
+
+    border:  10px solid yellow;
+  
 
 
 
@@ -434,9 +450,10 @@ header .social ul {
     min-width: 320px;
     max-width: 320px;
 
-    padding: 1rem;
-    margin: 1.5rem;
+    /* padding: 1rem; */
 
+
+    margin: 1rem;
 }
 
 .tools {
@@ -474,8 +491,6 @@ header .social ul {
 
 }
 
-
-
 .proj-cards h3 {
     padding: 1rem;
     font-size: 1.7rem;
@@ -492,6 +507,9 @@ header .social ul {
 
 }
 
+
+
+
 /* CARDS */
 .cards {
     background-color: #002333;
@@ -503,10 +521,6 @@ header .social ul {
 
     padding: 1rem;
     margin: 1.5rem;
-
-
-
-
 }
 
 .cards p {
@@ -522,17 +536,6 @@ header .social ul {
 .cards h3 {
     padding: 1rem;
 }
-
-
-/* 
-.cards .frameworks {
-    margin-bottom: 10px;
-    font-size: 1.7rem;
-    padding-top: 1rem;
-
-
-} */
-
 
 
 
