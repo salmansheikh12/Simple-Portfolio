@@ -316,7 +316,7 @@ header .social ul {
     color: white;
     background-color: #00244465;
     border: 10px solid red;
-    
+
 
 
 
@@ -383,7 +383,7 @@ header .social ul {
     display: flex;
     /* letter-spacing: 2px; */
     border: 10px solid red;
-    
+
 
 
 
@@ -725,7 +725,7 @@ header .social ul {
         padding-top: 5rem;
         padding-bottom: 5rem;
         width: 66%;
-   
+
 
     }
 
@@ -821,6 +821,7 @@ header .social ul {
         padding-top: 5rem;
         padding-bottom: 5rem;
         width: 100%;
+        
 
 
 
@@ -843,16 +844,12 @@ header .social ul {
         padding-top: 5rem;
         padding-bottom: 5rem;
         width: 100%;
+
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         border: 10px solid blueviolet;
         place-items: center center;
-
-
-
-
-
 
     }
 
@@ -863,54 +860,27 @@ header .social ul {
         border: 10px solid yellow;
         place-items: center center;
 
+    }
+
+    .projects .proj-content {
+
+        padding: 0rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        color: white;
 
 
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        border: 10px solid blueviolet;
+        place-items: center center;
 
-
-}
-
-
-
-.projects .proj-content {
-
-    padding: 0rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    justify-content: space-between;
-    text-align: center;
-    color: white;
-
-
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    border: 10px solid blueviolet;
-    place-items: center center;
-
-    
-
-
-}
-
-.projects .proj-set {
-    /* display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    border: 10px solid yellow;
-    place-items: center center; */
-
-    /* width: fit-content; */
-    /* block-size: fit-content; */
-
-
-
-
-}
-
-
-
+    }
 
 }
