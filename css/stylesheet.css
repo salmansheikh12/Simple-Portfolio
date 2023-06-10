@@ -289,7 +289,7 @@ header .social ul {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    border: 10px solid yellow;
+   
 
 
 }
@@ -300,6 +300,8 @@ header .social ul {
     align-items: center;
     display: flex;
 
+    border: 10px solid yellow;
+
 
 
 }
@@ -307,6 +309,7 @@ header .social ul {
 .about .about-me .about-text {
 
     width: 60%;
+    border: 10px solid yellow;
 
 
 
