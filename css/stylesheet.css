@@ -10,7 +10,7 @@ body {
 
 * {
     margin: 0%;
-    
+
 }
 
 header {
@@ -45,7 +45,7 @@ span {
     border-color: #000000;
     border-style: solid;
     border-width: .5px;
-    
+
     color: black;
     padding: 5px 20px;
     text-align: center;
@@ -55,14 +55,14 @@ span {
     cursor: pointer;
     border-radius: 18px;
     margin-top: 10px;
-    
+
 }
 
-.button a{
+.button a {
 
     text-decoration: none;
     color: white;
-    font-weight:900
+    font-weight: 900
 }
 
 
@@ -80,13 +80,15 @@ nav {
     min-height: 6vh;
 
     font-size: 1.4rem;
-    /* justify-content: center; */
+    justify-content: center;
 
+    /* display: grid; */
+    display: flex;
 
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /* grid-template-rows: 150px 10px; */
     place-items: center center;
 
-    
+
 
     /* border: 10px solid yellow; */
     /* border: 5px solid red; */
@@ -109,9 +111,9 @@ nav {
     padding: 10px;
     border-color: 5px solid purple;
 
-    
 
-     
+
+
 }
 
 
@@ -274,7 +276,7 @@ header .social ul {
 
     color: white;
     background-color: #00244465;
-    
+
 
 
 }
@@ -288,7 +290,7 @@ header .social ul {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-   
+
 
 
 }
@@ -344,7 +346,7 @@ header .social ul {
     display: block;
     justify-content: space-between;
     text-align: center;
-    
+
 
     color: white;
 
@@ -353,7 +355,7 @@ header .social ul {
 
 }
 
-.skill-content h1{
+.skill-content h1 {
     text-align: left;
 }
 
@@ -517,12 +519,10 @@ header .social ul {
 
 }
 
-.img-cards{
-
-}
+.img-cards {}
 
 
-.img1{
+.img1 {
 
     background-image: url("img\pics\pfp1.png");
     background-size: cover;
@@ -550,7 +550,7 @@ header .social ul {
 
 
 
-    
+
 }
 
 .cards p {
@@ -677,7 +677,7 @@ header .social ul {
 @media (max-width: 500px) {
 
     /* nav */
-    nav {
+    nav .center-links {
         display: none;
     }
 
