@@ -820,7 +820,7 @@ header .social ul {
         padding: 0rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
-
+        width: 100%;
 
 
 
@@ -842,7 +842,7 @@ header .social ul {
         padding: 0rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
-
+        width: 100%;
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -876,7 +876,7 @@ header .social ul {
     padding: 0rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    width: 66%;
+    width: 100%;
     margin: 0 auto;
     display: block;
     justify-content: space-between;
