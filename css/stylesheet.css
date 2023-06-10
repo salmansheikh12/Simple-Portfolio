@@ -5,10 +5,12 @@
 
 body {
     background: var(--dark-gray);
+    min-width: 390px;
 }
 
 * {
     margin: 0%;
+    
 }
 
 header {
@@ -38,6 +40,32 @@ span {
 }
 
 
+.button {
+    background-color: #4281A4;
+    border-color: #000000;
+    border-style: solid;
+    border-width: .5px;
+    
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 18px;
+    margin-top: 10px;
+    
+}
+
+.button a{
+
+    text-decoration: none;
+    color: white;
+    font-weight:900
+}
+
+
 /* NAVBAR */
 nav {
 
@@ -45,28 +73,30 @@ nav {
     background-color: #002333;
     width: 100%;
     position: fixed;
-    /* align-content: center; */
-    /* display: -webkit-box;
-    display: -ms-flexbox; */
-    display: flex;
-    /* -ms-flex-pack: distribute; */
-    /* justify-content: space-between; */
-    /* -webkit-box-align: center; */
-    /* -ms-flex-align: center; */
-    align-items: center;
-    min-height: 6vh;
-    /* -webkit-animation: nav-links 0.5s;
-    animation: nav-links 0.5s; */
-    font-size: 1.4rem;
-    justify-content: center;
 
+    /* display: inline; */
+
+    /* align-items: center; */
+    min-height: 6vh;
+
+    font-size: 1.4rem;
+    /* justify-content: center; */
+
+
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    place-items: center center;
+
+    
+
+    /* border: 10px solid yellow; */
+    /* border: 5px solid red; */
 
 }
 
 
 
 .logo {
-    /* z-index: 2; */
+    z-index: 1;
     /* position: fixed; */
     height: 100%;
     width: auto;
@@ -77,7 +107,12 @@ nav {
     font-size: 1.17em;
     font-weight: bold;
     /* background-color: red; */
-    padding: 10px
+    padding: 10px;
+    border-color: 5px solid purple;
+
+    
+
+     
 }
 
 
@@ -104,8 +139,7 @@ nav .center-links {
     padding-left: 80px;
     padding-right: 80px;
 
-    /* background-color: violet; */
-
+    /* border: 10px solid yellow; */
 
 }
 
@@ -185,6 +219,7 @@ input:checked+.slider:before {
 
 /* HERO SECTION */
 header .hero-text {
+    border: 10px solid yellow;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -240,6 +275,7 @@ header .social ul {
 
     color: white;
     background-color: #00244465;
+    
 
 
 }
@@ -253,6 +289,7 @@ header .social ul {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    border: 10px solid yellow;
 
 
 }
@@ -276,7 +313,7 @@ header .social ul {
 }
 
 .about .about-me .about-text h1 {
-    text-align: right;
+    text-align: left;
     padding-bottom: 1rem;
     letter-spacing: 2px;
     font-size: 3rem;
@@ -298,19 +335,39 @@ header .social ul {
 }
 
 .skills .skill-content {
-
     padding: 5rem;
     width: 66%;
+
     margin: 0 auto;
     display: block;
     justify-content: space-between;
-    color: white;
-    align-items: center;
+    text-align: center;
+    
 
- 
+    color: white;
+
+
 
 
 }
+
+.skill-content h1{
+    text-align: left;
+}
+
+.skills .skills-set {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    border: 10px solid yellow;
+    place-items: center center;
+
+
+
+
+
+}
+
 
 .skills .skill-content h1 {
     padding-bottom: 1rem;
@@ -331,40 +388,11 @@ header .social ul {
 }
 
 .skills-set .frameworks {
-    
+
 
 
     font-size: .85rem;
     font-weight: bolder;
-
-    
-
-}
-
-
-.skills .skills-set {
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
-    justify-content: center;
-
-
-
-
-
-}
-
-.skills .skills-set .languages {
-    background-color: #002333;
-    height: 22rem;
-    min-width: 18rem;
-    max-width: 18rem;
-    padding: 1rem;
-    margin: 1.5rem;
-    text-align: center;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-
 
 
 
@@ -401,7 +429,8 @@ header .social ul {
 
     padding-bottom: 1rem;
     font-size: 3rem;
-    
+    text-align: left;
+
 
 
 }
@@ -410,10 +439,10 @@ header .social ul {
 .projects .proj-set {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns:  repeat(auto-fill, minmax(350px, 1fr)) ;
-    border:  10px solid yellow;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    border: 10px solid yellow;
     place-items: center center;
-  
+
 
 
 
@@ -448,7 +477,7 @@ header .social ul {
 
 }
 
-.tools li{
+.tools li {
 
     display: inline;
 
@@ -486,6 +515,20 @@ header .social ul {
 
 }
 
+.img-cards{
+
+}
+
+
+.img1{
+
+    background-image: url("img\pics\pfp1.png");
+    background-size: cover;
+    background-position: center;
+
+
+}
+
 
 
 
@@ -500,6 +543,12 @@ header .social ul {
 
     padding: 1rem;
     margin: 1.5rem;
+
+
+
+
+
+    
 }
 
 .cards p {
@@ -519,7 +568,6 @@ header .social ul {
 
 
 /* media queries */
-
 
 @media (max-width: 1250px) {
 
