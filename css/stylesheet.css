@@ -2,6 +2,16 @@
     --dark-gray: #181a1b;
     --dark-blue: #002333;
 }
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+
 
 body {
     background: var(--dark-gray);
@@ -285,11 +295,13 @@ header .social ul {
 
     font-size: 1.3rem;
     letter-spacing: 2px;
-    padding: 5rem;
     width: 66%;
     margin: 0 auto;
+    padding: 5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
 
 
 
@@ -309,8 +321,9 @@ header .social ul {
 
 .about .about-me .about-text {
 
-    width: 60%;
+    /* width: 60%; */
     border: 10px solid yellow;
+    
 
 
 
@@ -401,6 +414,40 @@ header .social ul {
 
 
 }
+
+/* CARDS */
+.cards {
+    background-color: #002333;
+
+
+    height: 352px;
+    min-width: 288px;
+    max-width: 288px;
+
+    padding: 1rem;
+    margin: 1.5rem;
+
+
+
+
+
+
+}
+
+.cards p {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+
+
+
+.cards h3 {
+    padding: 1rem;
+}
+
 
 
 
@@ -534,44 +581,20 @@ header .social ul {
 
 
 
-/* CARDS */
-.cards {
-    background-color: #002333;
-
-
-    height: 352px;
-    min-width: 288px;
-    max-width: 288px;
-
-    padding: 1rem;
-    margin: 1.5rem;
-
-
-
-
-
-
-}
-
-.cards p {
-    list-style: none;
-    text-align: center;
-    padding-bottom: 10px;
-
-}
-
-
-
-
-.cards h3 {
-    padding: 1rem;
-}
 
 
 
 /* media queries */
 
 @media (max-width: 1250px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden
+        } 
+
 
     /* HERO TITLE */
     header .hero-text h1 {
@@ -623,6 +646,14 @@ header .social ul {
 
 
 @media (max-width: 830px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden
+        } 
+
 
     /* HERO */
     header .hero-text h1 {
@@ -720,26 +751,12 @@ header .social ul {
     /* ABOUT */
 
     .about .about-me {
-        display: block;
         font-size: .9rem;
-        letter-spacing: 2px;
-        width: 80%;
-        margin: 0 auto;
 
-
-    }
-
-    .about .about-me .img-me {
-        display: none;
-    }
-
-    .about .about-text {
-        margin: 0 auto;
-        padding-top: 2rem;
-    }
-
-    .about .img-me {
-        align-content: center;
+    
+   
+      
+       
     }
 
     .about .about-me .about-text h1 {
@@ -752,5 +769,8 @@ header .social ul {
 
         text-align: center;
     }
+
+    /* Skill cards */
+
 
 }
