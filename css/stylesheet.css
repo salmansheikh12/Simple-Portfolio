@@ -3,6 +3,19 @@
     --dark-blue: #002333;
 }
 
+
+html,
+body {
+    /* width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; */
+
+}
+
+
+
 body {
     background: var(--dark-gray);
     min-width: 390px;
@@ -13,15 +26,7 @@ body {
 
 }
 
-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background: var(--dark-gray);
-    position: relative;
 
-}
 
 #particles-js {
     width: 100%;
@@ -32,6 +37,7 @@ header {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat; */
+    /* z-index: -2; */
 }
 
 span {
@@ -219,6 +225,19 @@ input:checked+.slider:before {
 
 
 /* HERO SECTION */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: var(--dark-gray);
+    position: relative;
+
+    /* display: grid; */
+    /* place-items: center; */
+
+}
+
 header .hero-text {
     border: 10px solid yellow;
     position: absolute;
@@ -227,10 +246,30 @@ header .hero-text {
     transform: translate(-50%, -50%);
     color: white;
 
+    /* width: 66%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center; */
+    text-align: center;
+    width: 930px;
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 header .hero-text h1 {
     font-size: 5rem;
+
 }
 
 header .hero-text .mini-sentence {
@@ -276,6 +315,8 @@ header .social ul {
 
     color: white;
     background-color: #00244465;
+    border: 10px solid red;
+
 
 
 
@@ -285,11 +326,15 @@ header .social ul {
 
     font-size: 1.3rem;
     letter-spacing: 2px;
-    padding: 5rem;
     width: 66%;
     margin: 0 auto;
+    padding: 5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    border: 10px solid blueviolet;
 
 
 
@@ -297,7 +342,7 @@ header .social ul {
 
 .about .about-me .img-me {
 
-    padding-right: 5rem;
+    /* padding-right: 5rem; */
     align-items: center;
     display: flex;
 
@@ -309,8 +354,9 @@ header .social ul {
 
 .about .about-me .about-text {
 
-    width: 60%;
+    /* width: 60%; */
     border: 10px solid yellow;
+
 
 
 
@@ -336,6 +382,15 @@ header .social ul {
     letter-spacing: 2px;
     display: flex;
     /* letter-spacing: 2px; */
+    border: 10px solid red;
+
+
+
+
+
+
+
+
 }
 
 .skills .skill-content {
@@ -350,12 +405,13 @@ header .social ul {
 
     color: white;
 
-
+    border: 10px solid blueviolet;
 
 
 }
 
 .skill-content h1 {
+
     text-align: left;
 }
 
@@ -402,6 +458,40 @@ header .social ul {
 
 }
 
+/* CARDS */
+.cards {
+    background-color: #002333;
+
+
+    height: 352px;
+    min-width: 288px;
+    max-width: 288px;
+
+    padding: 1rem;
+    margin: 1.5rem;
+
+
+
+
+
+
+}
+
+.cards p {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+
+
+
+.cards h3 {
+    padding: 1rem;
+}
+
+
 
 
 /* PROJECTS */
@@ -410,6 +500,7 @@ header .social ul {
     background-color: #00244465;
     letter-spacing: 2px;
     display: flex;
+    border: 10px solid red;
 
 }
 
@@ -424,6 +515,8 @@ header .social ul {
     text-align: center;
 
     color: white;
+
+    border: 10px solid blueviolet;
 
 
 }
@@ -463,7 +556,7 @@ header .social ul {
     height: 528px;
     /* min-width: 320px; */
     max-width: 320px;
-    margin: 1rem;
+    /* margin: 1rem; */
 
 
 }
@@ -534,201 +627,22 @@ header .social ul {
 
 
 
-/* CARDS */
-.cards {
-    background-color: #002333;
-
-
-    height: 352px;
-    min-width: 288px;
-    max-width: 288px;
-
-    padding: 1rem;
-    margin: 1.5rem;
-
-
-
-
-
-
-}
-
-.cards p {
-    list-style: none;
-    text-align: center;
-    padding-bottom: 10px;
-
-}
-
-
-
-
-.cards h3 {
-    padding: 1rem;
-}
-
-/* EXPERIENCE */
-.experience {
-
-    background-color:var(--dark-grey);
-    letter-spacing: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-}
-
-/* Container around content */
-.container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
-    left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
-    /* Place the timelime to the left */
-    .timeline::after {
-    left: 31px;
-    }
-    
-    /* Full-width containers */
-    .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    }
-    
-    /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-    }
-  
-    /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-    left: 15px;
-    }
-    
-    /* Make all right containers behave like the left ones */
-    .right {
-    left: 0%;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* media queries */
 
 @media (max-width: 1250px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden
+    }
+
 
     /* HERO TITLE */
     header .hero-text h1 {
@@ -745,7 +659,7 @@ header .social ul {
         display: block;
         font-size: 1.3rem;
         letter-spacing: 2px;
-        width: 80%;
+        width: 66%;
         margin: 0 auto;
 
 
@@ -781,6 +695,22 @@ header .social ul {
 
 @media (max-width: 830px) {
 
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden
+    }
+
+
+    /* nav */
+    nav .center-links {
+        display: none;
+    }
+
+
     /* HERO */
     header .hero-text h1 {
         font-size: 2rem;
@@ -792,11 +722,9 @@ header .social ul {
 
     /* ABOUT */
     .about .about-me {
-        display: block;
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-        width: 80%;
-        margin: 0 auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 66%;
 
 
     }
@@ -833,13 +761,14 @@ header .social ul {
 
 @media (max-width: 500px) {
 
-    html, body {
+    html,
+    body {
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
         overflow-x: hidden
-        } 
+    }
 
     /* nav */
     nav .center-links {
@@ -873,30 +802,29 @@ header .social ul {
         height: auto;
     }
 
+    /* HERO  */
+
+    .hero-text {
+
+        text-align: center;
+
+    }
+
+    .hero-text h1 {}
+
 
     /* ABOUT */
 
     .about .about-me {
-        display: block;
         font-size: .9rem;
-        letter-spacing: 2px;
-        width: 80%;
-        margin: 0 auto;
+        padding: 0rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        /* width: 100%; */
+        
 
 
-    }
 
-    .about .about-me .img-me {
-        display: none;
-    }
-
-    .about .about-text {
-        margin: 0 auto;
-        padding-top: 2rem;
-    }
-
-    .about .img-me {
-        align-content: center;
     }
 
     .about .about-me .about-text h1 {
@@ -908,6 +836,51 @@ header .social ul {
     .about .about-me .about-text p {
 
         text-align: center;
+    }
+
+    /* Skill cards */
+    .skills .skill-content {
+        padding: 0rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 100%;
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        border: 10px solid blueviolet;
+        place-items: center center;
+
+    }
+
+    .skills .skills-set {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        border: 10px solid yellow;
+        place-items: center center;
+
+    }
+
+    .projects .proj-content {
+
+        padding: 0rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        color: white;
+
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        border: 10px solid blueviolet;
+        place-items: center center;
+
     }
 
 }
