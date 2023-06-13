@@ -229,7 +229,7 @@ header {
 }
 
 header .hero-text {
-    border: 10px solid yellow;
+    /* border: 10px solid yellow; */
     position: absolute;
     top: 50%;
     left: 50%;
