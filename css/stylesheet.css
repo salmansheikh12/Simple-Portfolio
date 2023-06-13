@@ -327,10 +327,11 @@ header .social ul {
 }
 
 
+.about .img-me img{
 
-.about .img-me {
-
-    padding-right: 5rem;
+    /* padding-right: 5rem; */
+    height:auto;
+    width: 500px;
 }
 
 .about-wrapper{
@@ -747,6 +748,13 @@ header .social ul {
         
     }
 
+    .about .img-me img {
+
+        padding-right: 5rem;
+
+
+    }
+
 
 
 }
@@ -780,6 +788,19 @@ header .social ul {
         padding-top: 3rem;
         /* text-align: center; */
 
+    }
+
+    .img-me img{
+      
+        padding: 0rem;
+        
+    }
+
+    .about .img-me img{
+
+        /* padding-right: 5rem; */
+        height:auto;
+        width: 360px;
     }
 
 }
@@ -821,6 +842,23 @@ header .social ul {
         padding-top: 5rem;
         padding-bottom: 3rem;
     }
+
+    .img-me img{
+      
+        padding: 0rem;
+        
+    }
+
+    .about .img-me img{
+
+        /* padding-right: 5rem; */
+        height:auto;
+        width: 360px;
+    }
+
+
+
+
 
 
 }
@@ -877,7 +915,38 @@ header .social ul {
 
     }
 
-    .hero-text h1 {}
+    .about .about-cont {
+
+        width: 100%;
+        padding: 1rem;
+        padding-bottom: 3rem;
+   
+    
+    
+        
+    
+    
+    
+    }
+
+    .img-me img{
+      
+        padding: 0rem;
+        
+    }
+
+    .about .img-me img{
+
+        /* padding-right: 5rem; */
+        height:auto;
+        width: 360px;
+    }
+
+    .title-sec{
+
+        text-align: center;
+    }
+
 
 
     /* Skill cards */
