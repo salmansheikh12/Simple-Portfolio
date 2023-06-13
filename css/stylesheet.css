@@ -714,6 +714,9 @@ header .social ul {
 @media screen and (max-width: 600px) {
     .exp-cont{
         width: auto;
+        padding: 0rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
     .timeline::after {
@@ -869,6 +872,9 @@ header .social ul {
 
     .exp-cont{
         width: auto;
+        padding: 0rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
 
@@ -1000,6 +1006,9 @@ header .social ul {
 
     .exp-cont{
         width: auto;
+        padding: 0rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
 }
