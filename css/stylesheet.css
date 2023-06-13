@@ -70,7 +70,7 @@ span {
 /* NAVBAR */
 nav {
 
-    /* z-index: 1; */
+    z-index: 1;
     
     background-color: #002333;
     width: 100%;
@@ -599,8 +599,10 @@ header .social ul {
 
 /* TIMELINE */
 
-.exp-cont {
 
+
+.exp-cont {
+    /* z-index: -1; */
     padding: 5rem;
     width: 66%;
 
@@ -661,7 +663,7 @@ header .social ul {
     border: 4px solid #FF9F55;
     top: 15px;
     border-radius: 50%;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .left {
@@ -678,7 +680,7 @@ header .social ul {
     position: absolute;
     top: 22px;
     width: 0;
-    z-index: 1;
+    /* z-index: 1; */
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
@@ -691,7 +693,7 @@ header .social ul {
     position: absolute;
     top: 22px;
     width: 0;
-    z-index: 1;
+    /* z-index: 1; */
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
@@ -710,20 +712,20 @@ header .social ul {
 }
 
 @media screen and (max-width: 600px) {
+    .exp-cont{
+        width: auto;
+    }
 
-    /* Place the timelime to the left */
     .timeline::after {
         left: 31px;
     }
 
-    /* Full-width containers */
     .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
 
-    /* Make sure that all arrows are pointing leftwards */
     .container::before {
         left: 60px;
         border: medium solid white;
@@ -731,28 +733,17 @@ header .social ul {
         border-color: transparent white transparent transparent;
     }
 
-    /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
         left: 15px;
     }
 
-    /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
     }
 }
 
-
-
-
-
-
-
-
-
 /* media queries */
-
 @media (max-width: 1250px) {
 
     html,
@@ -810,19 +801,6 @@ header .social ul {
 
         text-align: center;
     }
-
-    /* SKills */
-
-    /* .skill-content h1 {
-
-        text-align: center;
-    } */
-
-    /* Projects */
-    /* .proj-content h1 {
-        justify-content: space-between;
-        text-align: center;
-    } */
 
 }
 
@@ -889,7 +867,9 @@ header .social ul {
     }
 
 
-
+    .exp-cont{
+        width: auto;
+    }
 
 
 }
@@ -1015,6 +995,11 @@ header .social ul {
         /* border: 10px solid blueviolet; */
         place-items: center center;
 
+    }
+
+
+    .exp-cont{
+        width: auto;
     }
 
 }
