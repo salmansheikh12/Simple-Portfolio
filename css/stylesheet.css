@@ -292,15 +292,12 @@ header .social ul {
 
     color: white;
     background-color: #00244465;
-    /* border: 10px solid red; */
-    display: flex;
 
-    /* border: 10px solid red; */
 
 
 }
 
-.about .about-me {
+.about .about-cont {
 
     font-size: 1.3rem;
     letter-spacing: 2px;
@@ -309,49 +306,43 @@ header .social ul {
 
 
     margin: 0 auto;
-    display: flex;
+
     justify-content: space-between;
-    /* align-items: center; */
+
     text-align: center;
 
     gap: 5rem;
-    /* border: 10px solid blueviolet; */
+
+
+    
 
 
 
 }
 
-.about .about-me .img-me {
 
-    /* padding-right: 5rem; */
-    align-items: center;
-    display: flex;
-
-    /* border: 10px solid yellow; */
-
-
-
-}
-
-.about .about-me .about-text {
-
-    /* width: 60%; */
-    /* border: 10px solid yellow; */
-
-
-
-
-}
-
-.about .about-me .about-text h1 {
+.title-sec {
     text-align: left;
     padding-bottom: 1rem;
     letter-spacing: 2px;
+    color: white;
     font-size: 3rem;
+ 
 
 }
 
 
+
+.about .img-me {
+
+    padding-right: 5rem;
+}
+
+.about-wrapper{
+    margin: 0 auto;
+    
+    
+}
 
 
 /* SKILLS */
@@ -430,8 +421,13 @@ header .social ul {
 
 .skills-set .frameworks {
 
-    font-size: .85rem;
     font-weight: bolder;
+    
+    
+    padding-bottom: 1rem;
+
+
+    font-size: .85rem;
 
 
 
@@ -747,6 +743,18 @@ header .social ul {
 }
 
 /* media queries */
+
+@media (min-width: 1250px) {
+
+    .about-wrapper{
+      
+        display: flex;
+        
+    }
+
+
+
+}
 @media (max-width: 1250px) {
 
     html,
@@ -770,40 +778,6 @@ header .social ul {
 
 
     /* ABOUT */
-    .about .about-me {
-        display: block;
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-        width: 66%;
-        margin: 0 auto;
-
-
-    }
-
-    .about .about-me .img-me {
-        margin: 0 auto;
-
-        width: fit-content;
-    }
-
-    .about .about-text {
-        margin: 0 auto;
-        padding-top: 2rem;
-    }
-
-    .about .img-me {
-        align-content: center;
-    }
-
-    .about .about-me .about-text h1 {
-
-        text-align: center;
-    }
-
-    .about .about-me .about-text p {
-
-        text-align: center;
-    }
 
 }
 
@@ -836,37 +810,9 @@ header .social ul {
     }
 
     /* ABOUT */
-    .about .about-me {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        /* padding: 5rem; */
-        width: 66%;
-
-
-    }
-
-    .about .about-me .img-me {
+    .about-wrapper{
         display: none;
-
-    }
-
-    .about .about-text {
-        margin: 0 auto;
-        padding-top: 2rem;
-    }
-
-    .about .img-me {
-        align-content: center;
-    }
-
-    .about .about-me .about-text h1 {
-
-        text-align: center;
-    }
-
-    .about .about-me .about-text p {
-
-        text-align: center;
+        
     }
 
 
@@ -937,25 +883,9 @@ header .social ul {
 
     /* ABOUT */
 
-    .about .about-me {
-        font-size: .9rem;
-        padding: 0rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        width: 100%;
-        margin: 1.5rem;
-
-    }
-
-    .about .about-me .about-text h1 {
-        font-size: 2rem;
-
-        text-align: center;
-    }
-
-    .about .about-me .about-text p {
-
-        text-align: center;
+    .about-wrapper{
+        display: none;
+        
     }
 
     /* Skill cards */
