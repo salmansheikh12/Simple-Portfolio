@@ -864,7 +864,7 @@ header .social ul {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
     html,
     body {
@@ -920,12 +920,6 @@ header .social ul {
         width: 100%;
         padding: 1rem;
         padding-bottom: 3rem;
-   
-    
-    
-        
-    
-    
     
     }
 
@@ -942,9 +936,14 @@ header .social ul {
         width: 360px;
     }
 
-    .title-sec{
+    .about-wrapper{
+        padding-bottom: 5rem;
+    }
 
+    .title-sec{
+        padding-top: 5rem;
         text-align: center;
+        padding-bottom: 0rem;
     }
 
 
