@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,10 +13,24 @@
     <!-- css links -->
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
 
-    <!--js scripts-->
+    <!-- Animate On Scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        AOS.init({
+          duration: 2000,
+          // once: true,
+      
+        });
+      </script>
+    
 
 
     <header>
@@ -153,8 +170,8 @@
         <section id="about" class="about">
 
 
-            <div class="about-cont">
-                <h1 class="title-sec">About me</h1>
+            <div class="about-cont"  data-aos="fade-up">
+                <h1 class="title-sec" >About me</h1>
 
                 <div class="about-wrapper">
 
@@ -275,7 +292,7 @@
                         <div class="proj-img-wrapper">
                             <img class="proj-img" src="img\pics\pfp1.png">
                         </div>
-                        <h3>Simple Website Portfolio</h3>
+                        <h3>Static Portfolio</h3>
                         <p>Created a Website to display my projects, skills, and education</p>
 
 
@@ -327,14 +344,13 @@
                     </div>
 
                     <div class="proj-cards">
-                        
+
                         <div class="proj-img-wrapper">
                             <img class="proj-img" src="img\pics\cave-img.png">
                         </div>
 
-                        <h3>ODNAM Cave Runner Game</h3>
-                        <p>Created an interactive Java game using JavaFX and OOP principles. Users play as ODNAM and
-                            traverse through caves, finding weapons to battle monsters.
+                        <h3>Cave Runner Game</h3>
+                        <p>
                         </p>
 
                         <ul class="tools">
@@ -377,12 +393,12 @@
                     </div>
 
                     <div class="proj-cards">
-                        
+
                         <div>
                             <img class="proj-img" src="img\pics\pfp1.png">
                         </div>
 
-                        <h3>Vaccine-Log Database</h3>
+                        <h3>Vaccine Database</h3>
                         <p>Created a Website to display my projects, skills, and education</p>
 
                         <ul class="tools">
@@ -425,12 +441,12 @@
                     </div>
 
                     <div class="proj-cards">
-                        
+
                         <div>
                             <img class="proj-img" src="img\pics\pfp1.png">
                         </div>
-                        
-                        <h3>Faculty Directory and Database</h3>
+
+                        <h3>Faculty Database</h3>
                         <p>Created a Website to display my projects, skills, and education</p>
 
                         <ul class="tools">
@@ -474,7 +490,7 @@
 
                     <div class="proj-cards">
                         <div>
-                            <img class="proj-img" src="img\pics\pfp1.png">
+                            <img class="proj-img" src="img\pics\moontrek.png">
                         </div>
 
                         <h3>NASA JPL Moon-Trek</h3>
@@ -520,7 +536,7 @@
                     </div>
 
                     <div class="proj-cards">
-                        
+
                         <div class="proj-img-wrapper">
                             <img class="proj-img" src="img\pics\yourmoon.png">
                         </div>
@@ -568,12 +584,12 @@
                     </div>
 
                     <div class="proj-cards">
-                        
+
                         <div>
-                            <img class="proj-img" src="img\pics\pfp1.png">
+                            <img class="proj-img" src="img\pics\dynamicpfp.png">
                         </div>
 
-                        <h3>Dynamic Website</h3>
+                        <h3>Dynamic Portfolio</h3>
                         <p>Django framwork project</p>
 
                         <ul class="tools">
