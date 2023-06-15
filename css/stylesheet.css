@@ -104,7 +104,7 @@ nav {
 
     z-index: 2;
 
-    background-color: #002333;
+    background-color: rgba(0, 92, 173, 0.904);
     width: 100%;
     position: fixed;
 
@@ -329,7 +329,7 @@ header .social ul {
 .about {
 
     color: white;
-    background-color: #00244465;
+    background-color: rgba(0, 92, 173, 0.854);
 
 
 
@@ -503,7 +503,8 @@ header .social ul {
 /* PROJECTS */
 .projects {
 
-    background-color: #00244465;
+    /* background-color: #00244465; */
+    background-color: rgba(0, 92, 173, 0.854);
     letter-spacing: 2px;
     display: flex;
     /* border: 10px solid red; */
@@ -656,9 +657,6 @@ header .social ul {
 
 }
 
-.img-cards {}
-
-
 .img1 {
 
     background-image: url("img\pics\pfp1.png");
@@ -681,10 +679,6 @@ header .social ul {
     display: block;
     justify-content: space-between;
     /* text-align: center; */
-
-
-
-
     color: black;
 
 
@@ -793,6 +787,16 @@ header .social ul {
     position: relative;
     border-radius: 6px;
     color: white;
+}
+
+footer{
+    color: white;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+    text-align: center;
+    background-color: rgba(0, 92, 173, 0.904);
+
+
 }
 
 @media screen and (max-width: 600px) {
