@@ -6,11 +6,11 @@
 
 html,
 body {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden
+    overflow-x: hidden */
 }
 
 
@@ -71,12 +71,13 @@ span {
 ::-webkit-scrollbar {
 
    /* z-index: 3; */
+
 }
 
-/* ::-webkit-scrollbar-track {
-    scrollbar-width: none;
+::-webkit-scrollbar-track {
+
     
-} */
+}
 
 
 
@@ -84,7 +85,7 @@ span {
 /* NAVBAR */
 nav {
 
-    z-index: 1;
+    z-index: 2;
 
     background-color: #002333;
     width: 100%;
