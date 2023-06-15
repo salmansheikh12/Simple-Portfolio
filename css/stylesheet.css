@@ -696,6 +696,7 @@ header .social ul {
     font-size: 3rem;
     text-align: left;
     color: white;
+    padding-top: 5rem;
 
 }
 
@@ -860,12 +861,7 @@ header .social ul {
 
 }
 
-@media (max-width: 1800px) {
-    
-
-
-
-}
+@media (max-width: 1800px) {}
 
 @media (max-width: 1250px) {
 
@@ -1127,6 +1123,7 @@ header .social ul {
 
     .exp-cont h1 {
         text-align: center;
+        
     }
 
 }
