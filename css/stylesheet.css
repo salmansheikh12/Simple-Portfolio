@@ -67,18 +67,27 @@ span {
 }
 
 
-/* Scroller */
-::-webkit-scrollbar {
 
-   /* z-index: 3; */
-
+body::-webkit-scrollbar {
+    background-color: #181a1b;
+    width: 16px;
 }
 
-::-webkit-scrollbar-track {
 
-    
+body::-webkit-scrollbar-track {
+    background-color: #464748;
 }
 
+
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 1px solid #181a1b;
+}
+
+body::-webkit-scrollbar-button {
+    display:none;
+}
 
 
 
