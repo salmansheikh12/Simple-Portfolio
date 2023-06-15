@@ -67,6 +67,13 @@ span {
 }
 
 
+::-webkit-scrollbar{
+    z-index: 1;
+}
+::-webkit-scrollbar-track{
+
+    z-index: 1;
+}
 
 body::-webkit-scrollbar {
     background-color: #181a1b;
