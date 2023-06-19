@@ -101,11 +101,17 @@ body::-webkit-scrollbar-button {
 
 
 /* NAVBAR */
+nav .fas .fa-home {
+
+    font-size: 24px;
+}
+
 nav {
 
     z-index: 2;
 
-    background-color: rgba(0, 92, 173, 0.904);
+    /* background-color: rgba(0, 92, 173, 0.904); */
+    background-color: rgba(0, 65, 121, 0.854);
     width: 100%;
     position: fixed;
 
@@ -289,7 +295,28 @@ header .hero-text h1 {
 }
 
 header .hero-text .mini-sentence {
-    font-size: 2.3rem;
+    font-size: 1.3rem;
+    font-family: monospace;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    animation:
+        typing 5s steps(15) infinite,
+        cursor .4s step-end infinite alternate;
+        
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
 }
 
 header .hero-text ul {
@@ -328,8 +355,8 @@ header .social ul {
 .about {
 
     color: white;
-    background-color: rgba(0, 92, 173, 0.854);
-
+    /* background-color: rgba(0, 92, 173, 0.854); */
+    background-color: rgba(0, 65, 121, 0.854);
 
 
 }
@@ -483,7 +510,8 @@ header .social ul {
 .projects {
 
     /* background-color: #00244465; */
-    background-color: rgba(0, 92, 173, 0.854);
+    /* background-color: rgba(0, 92, 173, 0.854); */
+    background-color: rgba(0, 65, 121, 0.854);
     letter-spacing: 2px;
     display: flex;
     /* border: 10px solid red; */
@@ -773,7 +801,8 @@ footer {
     padding-bottom: .5rem;
     padding-top: 1rem;
     text-align: center;
-    background-color: rgba(0, 92, 173, 0.904);
+    /* background-color: rgba(0, 92, 173, 0.904); */
+    background-color: rgba(0, 65, 121, 0.854);
 
 
 }
@@ -862,7 +891,7 @@ footer {
     }
 
     header .hero-text .mini-sentence {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 
 
@@ -893,6 +922,13 @@ footer {
 
 }
 
+@media (max-width: 960px) {
+    nav .center-links {
+        display: none;
+    }
+    
+}
+
 
 @media (max-width: 830px) {
 
@@ -918,7 +954,7 @@ footer {
     }
 
     header .hero-text .mini-sentence {
-        font-size: 1rem;
+        font-size: .7rem;
     }
 
 
@@ -973,7 +1009,8 @@ footer {
 
     /* HERO */
     header .hero-text .mini-sentence {
-        font-size: .8rem;
+        font-size: .5rem;
+        /* white-space: pre-wrap;  */
 
     }
 
