@@ -249,12 +249,12 @@ input:checked+.slider:before {
 
 
 /* HERO SECTION */
-    /* icons */
-    .social a i {
-       padding: 10px;
-       font-size:48px;
+/* icons */
+.social a i {
+    padding: 10px;
+    font-size: 48px;
 
-    }
+}
 
 header {
     width: 100%;
@@ -263,10 +263,6 @@ header {
     height: 100vh;
     background: var(--dark-gray);
     position: relative;
-
-    /* display: grid; */
-    /* place-items: center; */
-
 }
 
 header .hero-text {
@@ -276,13 +272,8 @@ header .hero-text {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-
-    /* width: 66%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center; */
     text-align: center;
-    width: 930px;
+    width: 90%;
 
 
 }
@@ -374,8 +365,6 @@ header .social ul {
 
 
 .about .img-me img {
-
-    /* padding-right: 5rem; */
     height: auto;
     width: 500px;
 }
@@ -390,38 +379,20 @@ header .social ul {
 /* SKILLS */
 .skills {
 
-
-    /* background-color: #00244465; */
-
     letter-spacing: 2px;
     display: flex;
-    /* letter-spacing: 2px; */
-    /* border: 10px solid red; */
-
-
-
-
-
-
-
 
 }
 
 .skills .skill-content {
     padding: 5rem;
     width: 66%;
-
     margin: 0 auto;
     display: block;
     justify-content: space-between;
     text-align: center;
-
-
     color: white;
-
     /* border: 10px solid blueviolet; */
-
-
 }
 
 .skill-content h1 {
@@ -873,8 +844,6 @@ footer {
 
 }
 
-@media (max-width: 1800px) {}
-
 @media (max-width: 1250px) {
 
     html,
@@ -1003,10 +972,6 @@ footer {
     }
 
     /* HERO */
-    header .hero-text h1 {
-        /* font-size: 1rem; */
-    }
-
     header .hero-text .mini-sentence {
         font-size: .8rem;
 
@@ -1038,12 +1003,12 @@ footer {
 
     }
 
-    .hero-text h1 {
-        font-size: 1rem;
+    header .hero-text h1 {
+        font-size: 1.98rem;
     }
 
-    .mini-sentence {
-        font-size: .5rem;
+    header .mini-sentence {
+        font-size: .7rem;
     }
 
     .about .about-cont {
