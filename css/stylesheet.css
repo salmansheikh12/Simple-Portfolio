@@ -249,6 +249,13 @@ input:checked+.slider:before {
 
 
 /* HERO SECTION */
+    /* icons */
+    .social a i {
+       padding: 10px;
+       font-size:48px;
+
+    }
+
 header {
     width: 100%;
     display: flex;
@@ -790,7 +797,7 @@ header .social ul {
     color: white;
 }
 
-footer{
+footer {
     color: white;
     padding-bottom: .5rem;
     padding-top: 1rem;
@@ -997,11 +1004,12 @@ footer{
 
     /* HERO */
     header .hero-text h1 {
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 
     header .hero-text .mini-sentence {
-        font-size: .5rem;
+        font-size: .8rem;
+
     }
 
 
@@ -1128,7 +1136,13 @@ footer{
 
     .exp-cont h1 {
         text-align: center;
-        
+
+    }
+
+    /* icons */
+    .social a i {
+        font-size: 24px;
+
     }
 
 }
