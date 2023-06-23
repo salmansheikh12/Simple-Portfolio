@@ -123,8 +123,8 @@ nav .fas .fa-home {
     font-size: 24px;
 }
 
-#check{
-    /* display: none; */
+#check {
+    display: none;
 
 }
 
@@ -808,6 +808,7 @@ footer {
 
 }
 
+/* media queries */
 @media screen and (max-width: 600px) {
     .exp-cont {
         width: auto;
@@ -844,7 +845,7 @@ footer {
     }
 }
 
-/* media queries */
+
 
 @media (min-width: 1250px) {
 
@@ -921,10 +922,9 @@ footer {
 }
 
 @media (max-width: 960px) {
-
-    nav{
+    nav {
         justify-content: space-between;
-        /* display: inline-block; */
+
         padding-left: 20px;
         padding-right: 20px;
 
@@ -940,24 +940,28 @@ footer {
         text-align: center;
         flex-direction: column;
         display: flex;
-        transition:  all .5s;
-    
+        transition: all .5s;
+
     }
-      
-      .links li {
-        margin-top: 30px; 
-      }
-      
-      .link {
+
+    .links li {
+        margin-top: 30px;
+    }
+
+    .link {
         display: block;
-      }
+    }
+
     .collapse {
         display: contents;
     }
 
 
-    #check:checked .links{
-        display: none;
+
+
+    #check:checked {
+
+        
     }
 
 }
