@@ -92,8 +92,6 @@ body::-webkit-scrollbar-button {
 
 /* NAVBAR */
 
-
-
 .checkbtn i {
     color: white;
 
@@ -103,14 +101,18 @@ body::-webkit-scrollbar-button {
     float: right;
     line-height: 80px;
     font-size: 30px;
-
-}
-
-.collapse {
     display: none;
 
 }
 
+/* .links {
+    display: none;
+} */
+
+
+#check {
+    display: none;
+}
 
 a:hover {
     background: #1b9bff;
@@ -123,10 +125,6 @@ nav .fas .fa-home {
     font-size: 24px;
 }
 
-#check {
-    display: none;
-
-}
 
 nav {
     z-index: 9999;
@@ -141,7 +139,6 @@ nav {
     place-items: center center;
 
 }
-
 
 
 .logo {
@@ -273,6 +270,7 @@ header {
     height: 100vh;
     background: var(--dark-gray);
     position: relative;
+ 
 }
 
 header .hero-text {
@@ -909,9 +907,6 @@ footer {
         weight: 500px;
     }
 
-
-
-
     .img-me img {
 
         padding: 0rem;
@@ -922,27 +917,41 @@ footer {
 }
 
 @media (max-width: 960px) {
+
+    .checkbtn {
+
+        display: contents;
+
+    }
+
     nav {
         justify-content: space-between;
 
         padding-left: 20px;
         padding-right: 20px;
-
     }
 
-    nav .links {
+    .links{
         position: fixed;
         width: 100%;
         height: 100vh;
         background: var(--dark-gray);
-        top: 80px;
+        top: 70px;
         left: 0;
         text-align: center;
         flex-direction: column;
         display: flex;
-        transition: all .5s;
+        opacity: 0;
+        
+        
+        
 
     }
+
+    .menu-visible{
+        opacity: 1;
+    }
+
 
     .links li {
         margin-top: 30px;
@@ -951,19 +960,6 @@ footer {
     .link {
         display: block;
     }
-
-    .collapse {
-        display: contents;
-    }
-
-
-
-
-    #check:checked {
-
-        
-    }
-
 }
 
 
@@ -978,13 +974,6 @@ footer {
         overflow-x: hidden
     }
 
-
-    /* nav */
-    nav .center-links {
-        display: none;
-    }
-
-
     /* HERO */
     header .hero-text h1 {
         font-size: 2rem;
@@ -993,8 +982,6 @@ footer {
     header .hero-text .mini-sentence {
         font-size: .7rem;
     }
-
-
 
 
     .exp-cont {
@@ -1020,15 +1007,11 @@ footer {
         width: 360px;
     }
 
-
-
-
-
-
 }
 
 
 @media (max-width: 570px) {
+
 
     html,
     body {
@@ -1040,9 +1023,9 @@ footer {
     }
 
     /* nav */
-    nav .center-links {
+    /* nav .center-links {
         display: none;
-    }
+    } */
 
     /* HERO */
     header .hero-text .mini-sentence {
