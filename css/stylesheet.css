@@ -942,7 +942,7 @@ footer {
         flex-direction: column;
         display: flex;
         opacity: 0;
-        
+    
         
         
 
@@ -950,6 +950,7 @@ footer {
 
     .menu-visible{
         opacity: 1;
+        transition: opacity 0.5s ease-in-out;
     }
 
 
