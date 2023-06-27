@@ -57,39 +57,6 @@ a {
     font-weight: 900
 }
 
-
-::-webkit-scrollbar {
-    z-index: 1;
-}
-
-::-webkit-scrollbar-track {
-
-    z-index: 1;
-}
-
-body::-webkit-scrollbar {
-    background-color: #181a1b;
-    width: 16px;
-}
-
-
-body::-webkit-scrollbar-track {
-    background-color: #464748;
-}
-
-
-body::-webkit-scrollbar-thumb {
-    background-color: #babac0;
-    border-radius: 16px;
-    border: 1px solid #181a1b;
-}
-
-body::-webkit-scrollbar-button {
-    display: none;
-}
-
-
-
 /* NAVBAR */
 .checkbtn i {
     color: white;
@@ -129,7 +96,7 @@ header {
 
 }
 
-.header-conts{
+.header-conts {
     /* font-size: 1.3rem; */
     /* letter-spacing: 2px; */
     /* width: 66%; */
@@ -257,17 +224,29 @@ input:checked+.slider:before {
 
 
 /* HERO SECTION */
-.sec-hero{
-
-}
-
-
 /* icons */
-.social a i {
-    padding: 10px;
-    font-size: 48px;
+.social-icons {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 24px;
+  }
+  
+  .social-icons a:hover {
+    color: #000;
+  }
+  
 
-}
+
+
 
 
 header .hero-text {
@@ -333,11 +312,7 @@ header .hero-text ul li {
     font-size: 1.3rem;
 }
 
-header .social ul {
-    justify-content: center;
-    text-align: center;
 
-}
 
 .linkedin {
     width: 40px;
@@ -355,8 +330,8 @@ header .social ul {
 .about {
 
     color: white;
-    /* background-color: rgba(0, 92, 173, 0.854); */
-    background-color: rgba(0, 65, 121, 0.854);
+    /* background-color: rgba(0, 65, 121, 0.854); */
+    background-color: rgb(0, 0, 0);
 
 
 }
@@ -377,7 +352,6 @@ header .social ul {
 
 .title-sec {
     text-align: left;
-    padding-bottom: 1rem;
     letter-spacing: 2px;
     color: white;
     font-size: 3rem;
@@ -437,11 +411,7 @@ header .social ul {
 
 
 .skills .skill-content h1 {
-    padding-bottom: 1rem;
     font-size: 3rem;
-
-
-
 }
 
 
@@ -457,11 +427,7 @@ header .social ul {
 .skills-set .frameworks {
 
     font-weight: bolder;
-
-
     padding-bottom: 1rem;
-
-
     font-size: .85rem;
 
 
@@ -506,10 +472,10 @@ header .social ul {
 
     /* background-color: #00244465; */
     /* background-color: rgba(0, 92, 173, 0.854); */
-    background-color: rgba(0, 65, 121, 0.854);
+    /* background-color: rgba(0, 65, 121, 0.854); */
+    background-color: rgb(0, 0, 0);
     letter-spacing: 2px;
     display: flex;
-    /* border: 10px solid red; */
 
 }
 
@@ -524,8 +490,6 @@ header .social ul {
     text-align: center;
 
     color: white;
-
-    /* border: 10px solid blueviolet; */
 
 
 }
@@ -688,7 +652,7 @@ header .social ul {
     font-size: 3rem;
     text-align: left;
     color: white;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
 
 }
 
@@ -790,50 +754,13 @@ footer {
     padding-bottom: .5rem;
     padding-top: 1rem;
     text-align: center;
-    background-color: rgba(0, 65, 121, 0.854);
+    /* background-color: rgba(0, 65, 121, 0.854); */
+    background-color: rgb(0, 0, 0);
 
 
 }
 
 /* media queries */
-@media screen and (max-width: 600px) {
-    .exp-cont {
-        width: auto;
-        padding: 0rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
-
-    .timeline::after {
-        left: 31px;
-    }
-
-    .container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .container::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent rgba(225, 225, 225, 0.1) transparent transparent;
-    }
-
-    .left::after,
-    .right::after {
-        left: 15px;
-
-    }
-
-    .right {
-        left: 0%;
-    }
-}
-
-
-
 @media (min-width: 1250px) {
 
     .about-wrapper {
@@ -862,7 +789,6 @@ footer {
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden
     }
 
 
@@ -888,7 +814,7 @@ footer {
 
     .about .img-me .img {
         height: auto;
-        weight: 500px;
+        width: 500px;
     }
 
     .img-me img {
@@ -955,7 +881,6 @@ footer {
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden
     }
 
     /* HERO */
@@ -969,10 +894,31 @@ footer {
 
 
     .exp-cont {
-        width: auto;
+        /* width: auto;
         padding: 0rem;
-        padding-top: 5rem;
+        padding-bottom: 3rem; */
+
+
+
+        padding: 0rem;
         padding-bottom: 3rem;
+        width: 66%;
+
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+
+        color: white;
+
+
+
+    }
+
+    .exp-cont h1 {
+        text-align: left;
+        padding: 5rem;
+        padding-bottom: 0rem;
     }
 
 
@@ -994,10 +940,48 @@ footer {
 }
 
 
+@media screen and (max-width: 600px) {
+    .exp-cont {
+        width: auto;
+        padding: 0rem;
+        /* padding-top: 5rem; */
+        padding-bottom: 5rem;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent rgba(225, 225, 225, 0.1) transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+
+    }
+
+    .right {
+        left: 0%;
+    }
+}
+
+
 @media (max-width: 570px) {
 
-    .logo{
-        width: 900px;
+    .logo {
+        display: none;
+
     }
 
     html,
@@ -1006,7 +990,6 @@ footer {
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden
     }
 
     /* HERO */
@@ -1126,11 +1109,10 @@ footer {
 
     }
 
-
     .exp-cont {
         width: auto;
         padding: 0rem;
-        padding-top: 5rem;
+        /* padding-top: 5rem; */
         padding-bottom: 3rem;
 
     }
@@ -1141,9 +1123,6 @@ footer {
     }
 
     /* icons */
-    .social a i {
-        font-size: 24px;
 
-    }
 
 }
