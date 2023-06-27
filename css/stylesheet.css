@@ -1005,6 +1005,10 @@ footer {
 
 
 @media (max-width: 570px) {
+    /* body{
+
+        overflow-x: hidden;
+    } */
 
     .logo {
         display: none;
