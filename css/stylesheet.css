@@ -864,20 +864,21 @@ footer {
 
         padding-left: 20px;
         padding-right: 20px;
+    
     }
 
     .links {
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100vh;
         background: var(--dark-gray);
-        top: 70px;
+        top: 50px;
         left: 0;
         text-align: center;
         flex-direction: column;
         display: flex;
         opacity: 0;
-        z-index: 1;
+        
 
     }
 
