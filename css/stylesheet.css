@@ -1010,6 +1010,10 @@ footer {
 
 @media (max-width: 570px) {
 
+    .logo{
+        width: 900px;
+    }
+
     html,
     body {
         width: 100%;
