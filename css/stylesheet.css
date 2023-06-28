@@ -62,25 +62,25 @@ body {
     overflow: auto;
     scrollbar-width: thin;
     scrollbar-color: #888888 #f1f1f1;
-  }
-  
-  body::-webkit-scrollbar {
+}
+
+body::-webkit-scrollbar {
     width: 8px;
     border-radius: 4px;
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background-color: #f1f1f1;
     border-radius: 4px;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: #888888;
     border-radius: 4px;
-  }
-  
-  
-  
+}
+
+
+
 
 /* NAVBAR */
 .checkbtn i {
@@ -178,6 +178,7 @@ nav .center-links {
 
 nav .center-links .links {
     padding-inline-start: 0%;
+
 }
 
 nav ul li {
@@ -251,24 +252,24 @@ input:checked+.slider:before {
 /* HERO SECTION */
 /* icons */
 .social-icons {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     display: inline-block;
     margin: 0 10px;
     color: #ffffff;
     font-size: 24px;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     color: #000;
-  }
-  
+}
+
 
 
 
@@ -864,7 +865,7 @@ footer {
 
         padding-left: 20px;
         padding-right: 20px;
-    
+
     }
 
     .links {
@@ -872,18 +873,26 @@ footer {
         width: 100%;
         height: 100vh;
         background: var(--dark-gray);
+
+
         top: 6vh;
         left: 0;
+
+
         text-align: center;
         flex-direction: column;
         display: flex;
+
+        visibility: hidden;
         opacity: 0;
-        
+
+
 
     }
-
-
+    
     .menu-visible {
+
+        visibility: visible;
         opacity: 1;
         transition: opacity 0.5s ease-in-out;
     }
@@ -894,7 +903,7 @@ footer {
     }
 
     .link {
-        display: block;
+        /* display: block; */
     }
 }
 

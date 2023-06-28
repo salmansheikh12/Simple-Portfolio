@@ -14,7 +14,10 @@ window.addEventListener('DOMContentLoaded', function() {
   // Add click event listeners to all the links
   links.forEach(function(link) {
     link.addEventListener('click', function() {
-      menu.classList.remove('menu-visible'); // Collapse the menu when a link is clicked
+      menu.classList.remove('menu-visible'); 
     });
   });
 });
+
+
+
