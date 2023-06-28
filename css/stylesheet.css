@@ -7,6 +7,7 @@ body {
     background: var(--dark-gray);
     min-width: 390px;
     font-family: "Calibri", sans-serif;
+    overflow-x: hidden;
 }
 
 * {
