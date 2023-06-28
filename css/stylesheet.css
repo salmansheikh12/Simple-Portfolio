@@ -401,7 +401,7 @@ header .hero-text ul li {
     position: relative;
     /* padding: 10px; */
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 
 
 }
@@ -430,46 +430,49 @@ header .hero-text ul li {
         0px 12px 10px -10px rgba(0, 0, 0, .2);
 }
 
-#number{
+#number {
     font-weight: 600px;
     color: #ffffff;
 }
 
- circle{
+circle {
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
-   
 
- }
 
- .cir1{
-    animation: anim 2s linear forwards;
- }
+}
 
- .cir2{
-    animation: anim2 2s linear forwards;
- }
+.cir1 {
+    /* animation: anim 2s linear forwards; */
+    animation: anim 2s linear infinite alternate;
+}
 
- svg{
+.cir2 {
+    /* animation: anim2 2s linear forwards; */
+    animation: anim2 2.5s linear infinite alternate;
+}
+
+svg {
     position: absolute;
     top: 0;
     left: 0;
- }
+}
 
- @keyframes anim{
-    100%{
+@keyframes anim {
+    100% {
         stroke-dashoffset: 165.2;
     }
- }
+}
 
- @keyframes anim2{
+@keyframes anim2 {
     100%{
         stroke-dashoffset: 391.76;
     }
- }
+
+}
 
 .certs-title {
     padding-bottom: 1rem;
