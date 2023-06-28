@@ -447,7 +447,7 @@ circle {
 
 .cir1 {
     /* animation: anim 2s linear forwards; */
-    animation: anim 2s linear infinite alternate;
+    animation: anim 2.5s linear infinite alternate;
 }
 
 .cir2 {
