@@ -352,7 +352,7 @@ header .hero-text ul li {
 /* SKILLS */
 .skills {
     letter-spacing: 2px;
-    display: flex;
+    /* display: flex; */
 }
 
 .skills .skill-content {
@@ -392,6 +392,88 @@ header .hero-text ul li {
     font-weight: bolder;
     padding-bottom: 1rem;
     font-size: .85rem;
+}
+
+.cert-card {
+    width: 160px;
+    height: 160px;
+    /* background: #1b9bff; */
+    position: relative;
+    /* padding: 10px; */
+    align-items: center;
+    justify-content:center;
+
+
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    /* border: 1px solid rgb(216, 90, 0); */
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.583),
+        -6px -6px 10px -1px rgba(170, 170, 170, 0.246);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rgb(216, 90, 0); */
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(170, 170, 170, 0.246),
+        -0.5px -.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, .2);
+}
+
+#number{
+    font-weight: 600px;
+    color: #ffffff;
+}
+
+ circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+   
+
+ }
+
+ .cir1{
+    animation: anim 2s linear forwards;
+ }
+
+ .cir2{
+    animation: anim2 2s linear forwards;
+ }
+
+ svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+
+ @keyframes anim{
+    100%{
+        stroke-dashoffset: 165.2;
+    }
+ }
+
+ @keyframes anim2{
+    100%{
+        stroke-dashoffset: 391.76;
+    }
+ }
+
+.certs-title {
+    padding-bottom: 1rem;
+
 }
 
 /* CARDS */
@@ -585,9 +667,10 @@ header .hero-text ul li {
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #FF9F55;
+    border: 4px solid #583c26;
     top: 15px;
     border-radius: 50%;
+    background-image: url("img\icons\favicon.pdf");
 }
 
 .left {
@@ -788,6 +871,10 @@ footer {
 
 
 @media screen and (max-width: 600px) {
+    .skill-content h1 {
+        text-align: center;
+    }
+
     .exp-cont {
         width: auto;
         padding: 0rem;
@@ -895,11 +982,10 @@ footer {
         padding-top: 5rem;
         padding-bottom: 5rem;
         width: 100%;
-
-        display: grid;
+        /* display: flex; */
+        /* display: grid; */
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
         place-items: center center;
 
     }
