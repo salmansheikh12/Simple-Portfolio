@@ -101,13 +101,16 @@ nav .fas .fa-home {
     font-size: 24px;
 }
 
+  
 header {
     width: 100%;
     /* display: ; */
     justify-content: center;
     height: 100vh;
-    background: var(--dark-gray);
+    /* background: var(--dark-gray); */
     margin: 0 auto;
+    background-image: url("img/pics/main_image_star-forming_region_carina_nircam_final-5mb.jpg");
+
 }
 
 .header-conts {
@@ -119,6 +122,10 @@ header {
     justify-content: space-between;
     text-align: center;
     /* height: 100vh; */
+
+    /* background-image: url("img/pics/main_image_star-forming_region_carina_nircam_final-5mb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 nav {
